@@ -38,7 +38,7 @@ class Encrypter extends BaseEncrypter
         return ($cipher === 'AES-128-CBC' && $length === 16) ||
             ($cipher === 'AES-256-CBC' && $length === 32);
     }
-    
+
     /**
      * Encrypt and serialize given value
      *
@@ -80,7 +80,7 @@ class Encrypter extends BaseEncrypter
     {
         return $this->encrypt($value, false);
     }
-    
+
     /**
      * Decrypt given payload.
      *
