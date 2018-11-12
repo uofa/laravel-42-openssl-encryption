@@ -1,6 +1,6 @@
 <?php
 
-namespace uofa\Encryption;
+namespace Uofa\Encryption;
 
 use Illuminate\Support\ServiceProvider;
 
