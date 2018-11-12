@@ -13,6 +13,7 @@ class EncryptionServiceProvider extends ServiceProvider
             if (Str::startsWith($key = $app['config']['app.key'], 'base64:')) {
                 $key = base64_decode(substr($key, 7));
             }
+
             if ($app['config']->has('app.cipher')) {
                 return new Encrypter(
                     $key,
