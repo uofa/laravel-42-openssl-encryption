@@ -3,6 +3,7 @@
 namespace Uofa\Encryption;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class EncryptionServiceProvider extends ServiceProvider
 {
