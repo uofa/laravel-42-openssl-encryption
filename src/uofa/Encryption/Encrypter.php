@@ -1,6 +1,6 @@
 <?php
 
-namespace uofa\Encryption;
+namespace Uofa\Encryption;
 
 use Illuminate\Encryption\DecryptException;
 use Illuminate\Encryption\Encrypter as BaseEncrypter;
