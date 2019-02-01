@@ -5,5 +5,5 @@ As of `PHP 7.1.0` mcrypt has been deprecated. Laravel 4.2 Encrypter is using mcr
 ## Instructions
 
   - Install this library `composer require uofa/laravel42-encrypter`.
-  - Include a line `'uofa\Encryption\EncryptionServiceProvider'` at the end of your providers array in `config/app.php`.
+  - Include a line `'Uofa\Encryption\EncryptionServiceProvider'` at the end of your providers array in `config/app.php`.
   - Generate new key by running `php artisan key:generate`
