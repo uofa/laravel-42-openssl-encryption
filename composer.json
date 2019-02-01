@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "uofa\\Encryption\\": "src/uofa/Encryption/"
+      "Uofa\\Encryption\\": "src/Uofa/Encryption/"
     }
   },
   "minimum-stability": "stable"
