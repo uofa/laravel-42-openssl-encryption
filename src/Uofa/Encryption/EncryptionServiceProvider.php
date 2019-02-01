@@ -7,10 +7,16 @@ use Illuminate\Support\Str;
 
 class EncryptionServiceProvider extends ServiceProvider
 {
+    /**
+     * Register the encryption provider
+     *
+     * @return void
+     */
     public function register()
     {
         $this->app->bindShared('encrypter', function ($app) {
             $key = (string) $app['config']['app.key'];
+
             if (Str::startsWith($key, 'base64:')) {
                 $key = base64_decode(substr($key, 7));
             }
