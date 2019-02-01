@@ -10,7 +10,8 @@ class EncryptionServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bindShared('encrypter', function ($app) {
-            if (Str::startsWith($key = $app['config']['app.key'], 'base64:')) {
+            $key = (string) $app['config']['app.key'];
+            if (Str::startsWith($key, 'base64:')) {
                 $key = base64_decode(substr($key, 7));
             }
 
